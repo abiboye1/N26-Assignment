@@ -62,6 +62,8 @@ resource "aws_cloudtrail" "main_trail" {
   is_multi_region_trail         = true
   enable_log_file_validation    = true
 
+  
+
   event_selector {
     read_write_type = "All"
   }
@@ -70,3 +72,5 @@ resource "aws_cloudtrail" "main_trail" {
     Name = "n26-cloudtrail"
   }
 }
+
+
